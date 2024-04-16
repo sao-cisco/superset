@@ -99,7 +99,15 @@ WEBDRIVER_BASEURL = "http://superset:8088/"
 WEBDRIVER_BASEURL_USER_FRIENDLY = WEBDRIVER_BASEURL
 
 SQLLAB_CTAS_NO_LIMIT = True
-
+EXTRA_CATEGORICAL_COLOR_SCHEMES = [
+  {
+      "id": 'cisco_color_scheme',
+      "description": '',
+      "label": 'Cisco color scheme',
+      "colors":
+       ['#00BCEB', '#0D274D', '#0051AF', '#74BF4B', '#FBAB2C', '#E3241B', '#414344',
+       '#E2E2E2']
+  }]
 #
 # Optionally import superset_config_docker.py (which will have been included on
 # the PYTHONPATH) in order to allow for local settings to be overridden
