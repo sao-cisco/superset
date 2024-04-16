@@ -22,6 +22,7 @@
 #
 import logging
 import os
+from superset.superset.config import APP_NAME
 
 from celery.schedules import crontab
 from flask_caching.backends.filesystemcache import FileSystemCache
@@ -108,6 +109,7 @@ EXTRA_CATEGORICAL_COLOR_SCHEMES = [
        ['#00BCEB', '#0D274D', '#0051AF', '#74BF4B', '#FBAB2C', '#E3241B', '#414344',
        '#E2E2E2']
   }]
+APP_NAME = "Sustainability Insights Tool (SIT)"
 #
 # Optionally import superset_config_docker.py (which will have been included on
 # the PYTHONPATH) in order to allow for local settings to be overridden
