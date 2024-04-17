@@ -109,7 +109,7 @@ EXTRA_CATEGORICAL_COLOR_SCHEMES = [
        '#E2E2E2']
   }]
 APP_NAME = "Sustainability Insights Tool (SIT)"
-APP_ICON = "/static/assets/images/cisco_logo_new.png"
+APP_ICON = "/static/assets/images/cisco_logo_new.jpg"
 #
 # Optionally import superset_config_docker.py (which will have been included on
 # the PYTHONPATH) in order to allow for local settings to be overridden
