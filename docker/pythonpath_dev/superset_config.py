@@ -105,8 +105,7 @@ EXTRA_CATEGORICAL_COLOR_SCHEMES = [
       "description": '',
       "label": 'Cisco color scheme',
       "colors":
-       ['#00BCEB', '#0D274D', '#0051AF', '#74BF4B', '#FBAB2C', '#E3241B', '#414344',
-       '#E2E2E2']
+       ['#00bceb', '#fbab18', '#0d274d', '#6abf4b', '#e2231a', '#eed202', '#00bceb','#495057','#ced4da']
   }]
 APP_NAME = "Sustainability Insights Tool (SIT)"
 APP_ICON = "/static/assets/images/cisco_logo_new.jpg"
