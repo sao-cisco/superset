@@ -79,7 +79,7 @@ RUN mkdir -p ${PYTHONPATH} superset/static requirements superset-frontend apache
 COPY --chown=superset:superset pyproject.toml setup.py MANIFEST.in README.md ./
 # setup.py uses the version information in package.json
 COPY --chown=superset:superset superset-frontend/package.json superset-frontend/
-COPY --chown=superset:superset superset-frontend/src/assets/images/superset-logo-horiz-cisco.png /tmp/
+COPY --chown=superset:superset superset-frontend/src/assets/images/superset-logo-horiz-cisco.png superset-frontend/
 COPY --chown=superset:superset requirements/base.txt requirements/
 RUN --mount=type=cache,target=/root/.cache/pip \
     pip install --upgrade setuptools pip && \
