@@ -85,6 +85,8 @@ RUN --mount=type=cache,target=/root/.cache/pip \
     pip install -r requirements/base.txt
 
 COPY --chown=superset:superset --from=superset-node /app/superset/static/assets superset/static/assets
+## Copy logo to target folder
+COPY --chown=superset:superset superset-frontend/src/assets/images/superset-logo-horiz-cisco.png /app/superset/static/assets/images/
 ## Lastly, let's install superset itself
 COPY --chown=superset:superset superset superset
 RUN --mount=type=cache,target=/root/.cache/pip \
